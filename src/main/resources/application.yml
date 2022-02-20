@@ -1,0 +1,19 @@
+spring:
+  mail:
+    host: email-smtp.us-west-2.amazonaws.com
+    port: 587
+    username: SEU_USER_NAME
+    password: SEU_PASSWORD
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+server:
+  port: 8081
